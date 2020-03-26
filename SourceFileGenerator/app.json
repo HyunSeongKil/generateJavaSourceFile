@@ -1,0 +1,54 @@
+{
+	"version":"0.1",
+	"한글":"한글",
+	"overwrite" : true,
+	"targets" : ["controller", "service", "serviceImpl", "dao", "vo", "xml", "jsp", "js"],
+	"source" : "excel",
+	
+	
+	"packagePath" : "kr.co.sootech",
+	"outputPath" : "c:\\temp\\output",
+	"templatePath" : "c:\\temp\\template",
+	
+	"korBizName" : "업무명 - 국문",
+	"engBizName" : "업무명 - 영문",
+	
+	
+	"clipboard" : {
+		"deli" : "\t",
+		"dataStartRow"  : "1",
+		"korCol" : "0",
+		"engCol" : "1",
+		"commentCol" : "2"
+	},
+	
+	"excel" : {
+		"path" : "c:\\temp",
+		"filename" : "통합 문서 1.xlsx",
+		"sheetIndex" : "0",
+		"dataStartRow"  : "3",
+		"dataEndRow" : "4",
+		"korCol" : "0",
+		"engCol" : "1",
+		"commentCol" : "2"
+	},
+	
+	"csv" : {
+		"path" : "c:\\temp\\",
+		"filename" : "data.csv",
+		"deli" : ",",
+		"dataStartRow"  : "1",
+		"korCol" : "0",
+		"engCol" : "1",
+		"commentCol" : "2"
+	},
+	
+	"db" : {
+		"driverClass":"com.mysql.cj.jdbc.Driver",
+		"url" : "jdbc:mysql://localhost:3306/pmsdb?useSSL=false&serverTimezone=UTC",
+		"username" : "root",
+		"password" : "password",
+		"tableName" : "tb_menu"
+	}
+	
+}
